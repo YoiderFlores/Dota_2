@@ -67,16 +67,50 @@ p {
     transform: scale(1.05); /* Hace que el botón crezca un poquito */
 }
 
-/* Nuevo estilo para el Cambio 1 */
+/* --- ESTILOS DE LOS HÉROES DESTACADOS (RAMA) --- */
 .heroe-destacado {
     background-color: #2a2a2a;
-    padding: 10px;
-    margin: 50px;
+    padding: 15px;
     border-radius: 5px;
-    margin-bottom: 20px;
-    border-left: 5px solid #4CAF50; /* Un borde verde de veneno */
+    margin-bottom: 15px;
+    display: flex; /* Esto pone la imagen y el texto uno al lado del otro */
+    align-items: center;
+    text-align: left;
 }
-.heroe-destacado h3 {
-    color: #4CAF50;
+
+/* Estilo para las caras de los héroes */
+.icono-heroe {
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 2px solid #555;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* Quitamos el margen superior del h3 para que se alinee bien */
+.texto-heroe h3 {
     margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.texto-heroe p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Colores específicos para Pudge (Verde veneno) */
+.pudge {
+    border-left: 5px solid #4CAF50;
+}
+.pudge h3 {
+    color: #4CAF50;
+}
+
+/* Colores específicos para Axe (Rojo sangre) */
+.axe {
+    border-left: 5px solid #bf3a2b;
+}
+.axe h3 {
+    color: #bf3a2b;
 }
